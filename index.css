@@ -31,5 +31,39 @@ body, html {
 
 * {
     margin: 0;
+    padding: 0;
 }
 
+.header {
+    color: var(--white-text);
+    background: linear-gradient(to bottom right, var(--very-light-red), var(--light-red));
+    text-align: center;
+    padding: 12rem 2.5rem 8rem;
+}
+
+.header h1 {
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.header p {
+    margin-bottom: 4rem;
+}
+
+.header .ctaWrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    background: white;
+    border-radius: 10rem;
+    width: 120px;
+    height: 42px;
+}
