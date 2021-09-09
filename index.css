@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+:root {
+  --cta-text: hsl(356, 100%, 66%);
+  --cta-hover-bg: hsl(355, 100%, 74%);
+  --headings: hsl(208, 49%, 24%);
+  --footer-text: hsl(240, 2%, 79%);
+  --body-copy: hsl(207, 13%, 34%);
+  --footer-bg: hsl(240, 10%, 16%);
+  --light-red: hsl(13, 100%, 72%);
+  --red: hsl(353, 100%, 62%);
+  --dark-gray-blue: hsl(237, 17%, 21%);
+  --dark-desat-blue: hsl(237, 23%, 32%);
+
+  font-size: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.intro {
+  color: white;
+  background: url(images/bg-pattern-intro.svg),
+    linear-gradient(to bottom right, var(--light-red), var(--red));
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 400px, cover;
+  background-blend-mode: lighten;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.left,
+.right,
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+nav ul {
+  list-style: none;
+}
