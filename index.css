@@ -18,6 +18,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
 }
 
 * {
@@ -27,24 +29,26 @@ body {
 
 .container {
   width: 95%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .intro {
   color: white;
   background: url(images/bg-pattern-intro.svg),
-    linear-gradient(to bottom right, var(--light-red), var(--red));
-  background-position: center;
+    linear-gradient(to right, var(--light-red), var(--red));
+  background-position: -400px, center;
   background-repeat: no-repeat;
-  background-size: 400px, cover;
-  background-blend-mode: lighten;
+  background-size: 200%, cover;
+  background-blend-mode: invert;
+  border-radius: 0 0 0 6rem;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+  margin-bottom: 7rem;
 }
 
 .left,
@@ -57,4 +61,150 @@ nav ul {
 
 nav ul {
   list-style: none;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.contentWrapper {
+  text-align: center;
+  padding-bottom: 6rem;
+}
+
+h1 {
+  font-family: "Overpass", sans-serif;
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.ctaWrapper {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid white;
+  background: white;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.invert {
+  background: transparent;
+  color: white;
+}
+
+.first {
+  padding-top: 8rem;
+}
+
+h2 {
+  font-family: "Overpass", sans-serif;
+  text-align: center;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Overpass", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+
+.first img,
+.second img,
+.third img {
+  width: 50%;
+}
+
+.first img {
+  transform: translateX(50%) scale(1.5);
+}
+
+.second img {
+  margin: -80px 0;
+  transform: translateX(-10%);
+}
+
+.third img {
+  transform: translateX(-50%) scale(1.5);
+}
+
+.marBottom {
+  margin-bottom: 4rem;
+}
+
+.second {
+  margin: 12rem 0;
+  color: white;
+  background: url(images/bg-pattern-circles.svg),
+    linear-gradient(to right, var(--dark-gray-blue), var(--dark-desat-blue));
+  background-position: -200px -500px, center;
+  background-repeat: no-repeat;
+  background-size: 70%, cover;
+  border-radius: 0 6rem 0 6rem;
+}
+
+.second .textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textWrapper p {
+    line-height: 1.75rem;
+}
+
+.footer {
+    font-size: .85rem;
+    margin-top: 12rem;
+    background: var(--footer-bg);
+    padding: 6rem;
+    border-radius: 0 6rem 0 0;
+}
+
+.footer .flexbox {
+    color: white;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    list-style: none;
+    padding: 0;
+}
+
+.footer li {
+    opacity: .75;
+}
+
+.footer ul:last-of-type {
+    width: 15%;
+}
+
+.footer ul li:first-of-type {
+    opacity: 1;
+}
+
+.listTitle {
+    margin-bottom: 1.25rem;
 }
